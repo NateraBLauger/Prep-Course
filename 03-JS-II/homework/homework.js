@@ -236,24 +236,32 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-
+  var d = numero;
   var contador = 0;
-  var d;
-  while (numero !== 0) {
+
+  while (d >= 1) {
     contador++;
-    d = numero / 10;
+    d = d /10;
   }
-  if (d === 3) {
-    return true;
-  }
+  return contador;
   
 }
 
 function doWhile(numero) {
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
-  //Retornar el valor final.
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 
+  //hasta un límite de 8 veces. Retornar el valor final.
   //Usar el bucle do ... while.
+
+  var contador = 0;
+
+  while (contador < (8 * numero)) {
+    contador = 5 + numero;
+
+  }
+
+  return contador;
 }
+
 
 
 // No modificar nada debajo de esta línea
