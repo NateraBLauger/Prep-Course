@@ -243,7 +243,12 @@ function tieneTresDigitos(numero){
     contador++;
     d = d /10;
   }
-  return contador;
+  
+  if (contador === 3) {
+    return true;
+  } else {
+    return false;
+  }
   
 }
 
